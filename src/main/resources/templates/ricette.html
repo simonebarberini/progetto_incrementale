@@ -1,0 +1,15 @@
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Ingredienti</th>
+        <th>Procedimento</th>
+    </tr>
+    <th:block th:each="ricetta : ${ricetteList}">
+        <tr>
+            <td th:text="${ricetta.nome}"></td>
+            <td th:text="${ricetta.ingredienti}"></td>
+            <td th:text="${ricetta.procedimento}"></td>
+        </tr>
+    </th:block>
+</table>
+<a href="/aggiungiRicetta">Aggiungi Ricetta</a>
